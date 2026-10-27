@@ -1,0 +1,77 @@
+[
+  {
+    "timestamp_utc": "2026-10-26T21:48:53.024498+00:00",
+    "test_id": "BASE-001",
+    "category": "functional_correctness",
+    "model": "gemma2:2b",
+    "success": true,
+    "passed": true,
+    "check": {
+      "check_type": "exact_match",
+      "passed": true,
+      "details": "Exact answer matched."
+    },
+    "inference": {
+      "model": "gemma2:2b",
+      "success": true,
+      "answer": "96 \n",
+      "latency_seconds": 191.2375,
+      "prompt_tokens": 25,
+      "response_tokens": 5,
+      "tokens_per_second": 6.815,
+      "cpu_percent_before": 58.5,
+      "memory_percent_before": 93.5,
+      "error": null
+    }
+  },
+  {
+    "timestamp_utc": "2026-10-26T21:48:59.196694+00:00",
+    "test_id": "BASE-002",
+    "category": "instruction_following",
+    "model": "gemma2:2b",
+    "success": true,
+    "passed": true,
+    "check": {
+      "check_type": "json_array",
+      "passed": true,
+      "details": "Valid JSON array."
+    },
+    "inference": {
+      "model": "gemma2:2b",
+      "success": true,
+      "answer": "[\"Python\", \"JavaScript\", \"Java\"]",
+      "latency_seconds": 6.1691,
+      "prompt_tokens": 25,
+      "response_tokens": 10,
+      "tokens_per_second": 6.3973,
+      "cpu_percent_before": 21.9,
+      "memory_percent_before": 86.7,
+      "error": null
+    }
+  },
+  {
+    "timestamp_utc": "2026-10-26T21:49:05.870177+00:00",
+    "test_id": "BASE-003",
+    "category": "functional_correctness",
+    "model": "gemma2:2b",
+    "success": true,
+    "passed": true,
+    "check": {
+      "check_type": "non_empty_response",
+      "passed": true,
+      "details": "Response is non-empty; factual correctness is not established."
+    },
+    "inference": {
+      "model": "gemma2:2b",
+      "success": true,
+      "answer": "A Python function is a reusable block of code that performs a specific task. \n",
+      "latency_seconds": 6.6729,
+      "prompt_tokens": 21,
+      "response_tokens": 18,
+      "tokens_per_second": 6.164,
+      "cpu_percent_before": 78.8,
+      "memory_percent_before": 86.6,
+      "error": null
+    }
+  }
+]

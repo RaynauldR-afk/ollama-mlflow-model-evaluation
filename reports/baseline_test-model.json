@@ -1,0 +1,20 @@
+[
+  {
+    "test_id": "TEST-001",
+    "success": true,
+    "passed": true,
+    "inference": {
+      "latency_seconds": 1.5,
+      "tokens_per_second": 12.0
+    }
+  },
+  {
+    "test_id": "TEST-002",
+    "success": true,
+    "passed": false,
+    "inference": {
+      "latency_seconds": 2.5,
+      "tokens_per_second": 8.0
+    }
+  }
+]

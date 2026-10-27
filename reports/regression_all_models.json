@@ -1,0 +1,227 @@
+[
+  {
+    "timestamp_utc": "2026-10-26T21:43:05.713764+00:00",
+    "test_id": "BASE-001",
+    "category": "functional_correctness",
+    "model": "llama3.2:3b",
+    "success": true,
+    "passed": true,
+    "check": {
+      "check_type": "exact_match",
+      "passed": true,
+      "details": "Exact answer matched."
+    },
+    "inference": {
+      "model": "llama3.2:3b",
+      "success": true,
+      "answer": "96",
+      "latency_seconds": 100.5987,
+      "prompt_tokens": 40,
+      "response_tokens": 2,
+      "tokens_per_second": 7.64,
+      "cpu_percent_before": 31.7,
+      "memory_percent_before": 76.2,
+      "error": null
+    }
+  },
+  {
+    "timestamp_utc": "2026-10-26T21:43:13.265251+00:00",
+    "test_id": "BASE-002",
+    "category": "instruction_following",
+    "model": "llama3.2:3b",
+    "success": true,
+    "passed": true,
+    "check": {
+      "check_type": "json_array",
+      "passed": true,
+      "details": "Valid JSON array."
+    },
+    "inference": {
+      "model": "llama3.2:3b",
+      "success": true,
+      "answer": "[\"Python\", \"JavaScript\", \"C++\"]",
+      "latency_seconds": 7.5501,
+      "prompt_tokens": 41,
+      "response_tokens": 11,
+      "tokens_per_second": 5.7009,
+      "cpu_percent_before": 21.8,
+      "memory_percent_before": 78.0,
+      "error": null
+    }
+  },
+  {
+    "timestamp_utc": "2026-10-26T21:43:22.556826+00:00",
+    "test_id": "BASE-003",
+    "category": "functional_correctness",
+    "model": "llama3.2:3b",
+    "success": true,
+    "passed": true,
+    "check": {
+      "check_type": "non_empty_response",
+      "passed": true,
+      "details": "Response is non-empty; factual correctness is not established."
+    },
+    "inference": {
+      "model": "llama3.2:3b",
+      "success": true,
+      "answer": "A Python function is a block of code that can be executed multiple times with different inputs, allowing for reusable and modular programming.",
+      "latency_seconds": 9.2907,
+      "prompt_tokens": 37,
+      "response_tokens": 26,
+      "tokens_per_second": 4.7288,
+      "cpu_percent_before": 60.6,
+      "memory_percent_before": 78.2,
+      "error": null
+    }
+  },
+  {
+    "timestamp_utc": "2026-10-26T21:45:21.642044+00:00",
+    "test_id": "BASE-001",
+    "category": "functional_correctness",
+    "model": "qwen2.5:3b",
+    "success": true,
+    "passed": true,
+    "check": {
+      "check_type": "exact_match",
+      "passed": true,
+      "details": "Exact answer matched."
+    },
+    "inference": {
+      "model": "qwen2.5:3b",
+      "success": true,
+      "answer": "96",
+      "latency_seconds": 105.2122,
+      "prompt_tokens": 45,
+      "response_tokens": 3,
+      "tokens_per_second": 6.7432,
+      "cpu_percent_before": 43.0,
+      "memory_percent_before": 78.8,
+      "error": null
+    }
+  },
+  {
+    "timestamp_utc": "2026-10-26T21:45:27.856491+00:00",
+    "test_id": "BASE-002",
+    "category": "instruction_following",
+    "model": "qwen2.5:3b",
+    "success": true,
+    "passed": true,
+    "check": {
+      "check_type": "json_array",
+      "passed": true,
+      "details": "Valid JSON array."
+    },
+    "inference": {
+      "model": "qwen2.5:3b",
+      "success": true,
+      "answer": "[\"Java\", \"Python\", \"JavaScript\"]",
+      "latency_seconds": 6.212,
+      "prompt_tokens": 45,
+      "response_tokens": 10,
+      "tokens_per_second": 5.2625,
+      "cpu_percent_before": 32.7,
+      "memory_percent_before": 94.9,
+      "error": null
+    }
+  },
+  {
+    "timestamp_utc": "2026-10-26T21:45:35.839564+00:00",
+    "test_id": "BASE-003",
+    "category": "functional_correctness",
+    "model": "qwen2.5:3b",
+    "success": true,
+    "passed": true,
+    "check": {
+      "check_type": "non_empty_response",
+      "passed": true,
+      "details": "Response is non-empty; factual correctness is not established."
+    },
+    "inference": {
+      "model": "qwen2.5:3b",
+      "success": true,
+      "answer": "A Python function defines a block of organized, reusable code that performs a single, related action.",
+      "latency_seconds": 7.9817,
+      "prompt_tokens": 41,
+      "response_tokens": 20,
+      "tokens_per_second": 4.5775,
+      "cpu_percent_before": 70.2,
+      "memory_percent_before": 94.6,
+      "error": null
+    }
+  },
+  {
+    "timestamp_utc": "2026-10-26T21:48:53.024498+00:00",
+    "test_id": "BASE-001",
+    "category": "functional_correctness",
+    "model": "gemma2:2b",
+    "success": true,
+    "passed": true,
+    "check": {
+      "check_type": "exact_match",
+      "passed": true,
+      "details": "Exact answer matched."
+    },
+    "inference": {
+      "model": "gemma2:2b",
+      "success": true,
+      "answer": "96 \n",
+      "latency_seconds": 191.2375,
+      "prompt_tokens": 25,
+      "response_tokens": 5,
+      "tokens_per_second": 6.815,
+      "cpu_percent_before": 58.5,
+      "memory_percent_before": 93.5,
+      "error": null
+    }
+  },
+  {
+    "timestamp_utc": "2026-10-26T21:48:59.196694+00:00",
+    "test_id": "BASE-002",
+    "category": "instruction_following",
+    "model": "gemma2:2b",
+    "success": true,
+    "passed": true,
+    "check": {
+      "check_type": "json_array",
+      "passed": true,
+      "details": "Valid JSON array."
+    },
+    "inference": {
+      "model": "gemma2:2b",
+      "success": true,
+      "answer": "[\"Python\", \"JavaScript\", \"Java\"]",
+      "latency_seconds": 6.1691,
+      "prompt_tokens": 25,
+      "response_tokens": 10,
+      "tokens_per_second": 6.3973,
+      "cpu_percent_before": 21.9,
+      "memory_percent_before": 86.7,
+      "error": null
+    }
+  },
+  {
+    "timestamp_utc": "2026-10-26T21:49:05.870177+00:00",
+    "test_id": "BASE-003",
+    "category": "functional_correctness",
+    "model": "gemma2:2b",
+    "success": true,
+    "passed": true,
+    "check": {
+      "check_type": "non_empty_response",
+      "passed": true,
+      "details": "Response is non-empty; factual correctness is not established."
+    },
+    "inference": {
+      "model": "gemma2:2b",
+      "success": true,
+      "answer": "A Python function is a reusable block of code that performs a specific task. \n",
+      "latency_seconds": 6.6729,
+      "prompt_tokens": 21,
+      "response_tokens": 18,
+      "tokens_per_second": 6.164,
+      "cpu_percent_before": 78.8,
+      "memory_percent_before": 86.6,
+      "error": null
+    }
+  }
+]

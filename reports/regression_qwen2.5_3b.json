@@ -1,0 +1,77 @@
+[
+  {
+    "timestamp_utc": "2026-10-26T21:45:21.642044+00:00",
+    "test_id": "BASE-001",
+    "category": "functional_correctness",
+    "model": "qwen2.5:3b",
+    "success": true,
+    "passed": true,
+    "check": {
+      "check_type": "exact_match",
+      "passed": true,
+      "details": "Exact answer matched."
+    },
+    "inference": {
+      "model": "qwen2.5:3b",
+      "success": true,
+      "answer": "96",
+      "latency_seconds": 105.2122,
+      "prompt_tokens": 45,
+      "response_tokens": 3,
+      "tokens_per_second": 6.7432,
+      "cpu_percent_before": 43.0,
+      "memory_percent_before": 78.8,
+      "error": null
+    }
+  },
+  {
+    "timestamp_utc": "2026-10-26T21:45:27.856491+00:00",
+    "test_id": "BASE-002",
+    "category": "instruction_following",
+    "model": "qwen2.5:3b",
+    "success": true,
+    "passed": true,
+    "check": {
+      "check_type": "json_array",
+      "passed": true,
+      "details": "Valid JSON array."
+    },
+    "inference": {
+      "model": "qwen2.5:3b",
+      "success": true,
+      "answer": "[\"Java\", \"Python\", \"JavaScript\"]",
+      "latency_seconds": 6.212,
+      "prompt_tokens": 45,
+      "response_tokens": 10,
+      "tokens_per_second": 5.2625,
+      "cpu_percent_before": 32.7,
+      "memory_percent_before": 94.9,
+      "error": null
+    }
+  },
+  {
+    "timestamp_utc": "2026-10-26T21:45:35.839564+00:00",
+    "test_id": "BASE-003",
+    "category": "functional_correctness",
+    "model": "qwen2.5:3b",
+    "success": true,
+    "passed": true,
+    "check": {
+      "check_type": "non_empty_response",
+      "passed": true,
+      "details": "Response is non-empty; factual correctness is not established."
+    },
+    "inference": {
+      "model": "qwen2.5:3b",
+      "success": true,
+      "answer": "A Python function defines a block of organized, reusable code that performs a single, related action.",
+      "latency_seconds": 7.9817,
+      "prompt_tokens": 41,
+      "response_tokens": 20,
+      "tokens_per_second": 4.5775,
+      "cpu_percent_before": 70.2,
+      "memory_percent_before": 94.6,
+      "error": null
+    }
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "timestamp_utc": "2026-10-26T21:00:39.446031+00:00",
+    "test_id": "BASE-001",
+    "category": "functional_correctness",
+    "model": "llama3.2:3b",
+    "success": true,
+    "passed": true,
+    "check": {
+      "check_type": "exact_match",
+      "passed": true,
+      "details": "Exact answer matched."
+    },
+    "inference": {
+      "model": "llama3.2:3b",
+      "success": true,
+      "answer": "96",
+      "latency_seconds": 242.1876,
+      "prompt_tokens": 40,
+      "response_tokens": 2,
+      "tokens_per_second": 2.8311,
+      "cpu_percent_before": 46.6,
+      "memory_percent_before": 75.5,
+      "error": null
+    }
+  },
+  {
+    "timestamp_utc": "2026-10-26T21:00:49.021360+00:00",
+    "test_id": "BASE-002",
+    "category": "instruction_following",
+    "model": "llama3.2:3b",
+    "success": true,
+    "passed": true,
+    "check": {
+      "check_type": "json_array",
+      "passed": true,
+      "details": "Valid JSON array."
+    },
+    "inference": {
+      "model": "llama3.2:3b",
+      "success": true,
+      "answer": "[\"Python\", \"JavaScript\", \"C++\"]",
+      "latency_seconds": 9.5746,
+      "prompt_tokens": 41,
+      "response_tokens": 11,
+      "tokens_per_second": 5.7524,
+      "cpu_percent_before": 15.3,
+      "memory_percent_before": 93.7,
+      "error": null
+    }
+  },
+  {
+    "timestamp_utc": "2026-10-26T21:00:57.576787+00:00",
+    "test_id": "BASE-003",
+    "category": "functional_correctness",
+    "model": "llama3.2:3b",
+    "success": true,
+    "passed": true,
+    "check": {
+      "check_type": "non_empty_response",
+      "passed": true,
+      "details": "Response is non-empty; factual correctness is not established."
+    },
+    "inference": {
+      "model": "llama3.2:3b",
+      "success": true,
+      "answer": "A Python function is a block of code that can be executed multiple times with different inputs, allowing for reusable and modular programming.",
+      "latency_seconds": 8.5536,
+      "prompt_tokens": 37,
+      "response_tokens": 26,
+      "tokens_per_second": 5.3916,
+      "cpu_percent_before": 44.7,
+      "memory_percent_before": 93.8,
+      "error": null
+    }
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "timestamp_utc": "2026-10-26T21:28:19.345879+00:00",
+    "test_id": "BASE-002",
+    "category": "instruction_following",
+    "model": "qwen2.5:3b",
+    "success": true,
+    "passed": true,
+    "check": {
+      "check_type": "json_array",
+      "passed": true,
+      "details": "Valid JSON array."
+    },
+    "inference": {
+      "model": "qwen2.5:3b",
+      "success": true,
+      "answer": "[\"Java\", \"Python\", \"JavaScript\"]",
+      "latency_seconds": 101.864,
+      "prompt_tokens": 45,
+      "response_tokens": 10,
+      "tokens_per_second": 4.165,
+      "cpu_percent_before": 88.1,
+      "memory_percent_before": 77.8,
+      "error": null
+    }
+  },
+  {
+    "timestamp_utc": "2026-10-26T21:31:23.074318+00:00",
+    "test_id": "ROB-001",
+    "category": "ambiguity_handling",
+    "model": "qwen2.5:3b",
+    "success": true,
+    "passed": true,
+    "check": {
+      "check_type": "non_empty_response",
+      "passed": true,
+      "details": "Response is non-empty; factual correctness is not established."
+    },
+    "inference": {
+      "model": "qwen2.5:3b",
+      "success": true,
+      "answer": "To effectively improve performance, it's crucial to have a clear understanding of what aspects of performance you are aiming to enhance and what specific information is missing. Here are some general steps and areas to consider, but please note that the specific suggestions will depend on the context (e.g., software performance, hardware performance, process efficiency, etc.).\n\n### 1. Identify the Specific Area of Performance\n- **Software Performance**: CPU usage, memory management, disk I/O, network latency, etc.\n- **Hardware Performance**: CPU speed, memory capacity, storage speed, network bandwidth, etc.\n- **Process Efficiency**: Workflow, resource allocation, task management, etc.\n\n### 2. Gather Relevant Data\n- **Performance Metrics**: Collect data on the current performance metrics (e.g., CPU usage, memory usage, response times, etc.).\n- **Usage Patterns**: Understand how the system or process is used (e.g., peak usage times, typical workloads, etc.).\n- **Resource Utilization**: Monitor resource usage to identify bottlenecks.\n- **Error Logs**: Analyze error logs to understand what might be causing performance issues.\n\n### 3. Analyze the Data\n- **Identify Bottlenecks**: Use the data to pinpoint where performance issues are occurring.\n- **Analyze Trends**: Look for patterns or trends in the data that might indicate underlying issues.\n- **Compare with Benchmarks**: Compare current performance with benchmarks or industry standards.\n\n### 4. Prioritize Improvements\n- **Critical Areas**: Focus on areas that have the most significant impact on performance.\n- **Impact on Users**: Prioritize improvements that will have the most positive impact on user experience.\n\n### 5. Implement Solutions\n- **Software Optimization**: Optimize code, use more efficient algorithms, reduce resource usage, etc.\n- **Hardware Upgrades**: Replace or upgrade hardware components that are bottlenecks.\n- **Process Changes**: Refine workflows, optimize resource allocation, etc.\n\n### 6. Monitor and Evaluate\n- **Continuous Monitoring**: Set up monitoring systems to track performance over time.\n- **Performance Testing**: Regularly test performance to ensure improvements are maintained.\n- **Feedback Loop**: Use feedback from users and monitoring data to identify and address new issues.\n\n### 7. Consider Scalability\n- **Scalability**: Ensure that the system can handle increased loads without degrading performance.\n- **Future-Proofing**: Design systems that can scale as needs change.\n\n### 8. Consider Security and Compliance\n- **Security**: Ensure that performance improvements do not compromise security.\n- **Compliance**: Ensure that performance improvements comply with relevant regulations and standards.\n\n### 9. Document and Communicate\n- **Documentation**: Keep detailed records of the performance improvements and the rationale behind them.\n- **Communication**: Keep stakeholders informed about the performance improvements and their benefits.\n\n### 10. Continuous Improvement\n- **Iterative Process**: Performance improvements are often iterative, with ongoing refinement and optimization.\n\nBy following these steps and considering the specific context, you can systematically improve performance. If you have a specific scenario or area in mind, I can provide more detailed suggestions.",
+      "latency_seconds": 183.7004,
+      "prompt_tokens": 47,
+      "response_tokens": 638,
+      "tokens_per_second": 3.5685,
+      "cpu_percent_before": 42.0,
+      "memory_percent_before": 91.5,
+      "error": null
+    }
+  },
+  {
+    "timestamp_utc": "2026-10-26T21:31:34.167022+00:00",
+    "test_id": "ROB-002",
+    "category": "format_compliance",
+    "model": "qwen2.5:3b",
+    "success": true,
+    "passed": false,
+    "check": {
+      "check_type": "json_object",
+      "passed": false,
+      "details": "Invalid JSON: Expecting value"
+    },
+    "inference": {
+      "model": "qwen2.5:3b",
+      "success": true,
+      "answer": "```json\n{\n  \"status\": \"ok\",\n  \"count\": 3\n}\n```",
+      "latency_seconds": 10.9169,
+      "prompt_tokens": 59,
+      "response_tokens": 21,
+      "tokens_per_second": 4.1008,
+      "cpu_percent_before": 99.3,
+      "memory_percent_before": 74.5,
+      "error": null
+    }
+  },
+  {
+    "timestamp_utc": "2026-10-26T21:32:26.243593+00:00",
+    "test_id": "ROB-003",
+    "category": "uncertainty_handling",
+    "model": "qwen2.5:3b",
+    "success": true,
+    "passed": true,
+    "check": {
+      "check_type": "non_empty_response",
+      "passed": true,
+      "details": "Response is non-empty; factual correctness is not established."
+    },
+    "inference": {
+      "model": "qwen2.5:3b",
+      "success": true,
+      "answer": "I'm sorry, but I don't have real-time access to current weather data or the ability to predict the weather 30 days into the future. Weather forecasting becomes increasingly uncertain as we look further into the future, especially beyond a week. Accurate weather predictions for such a long-term horizon are not reliable.\n\nFor your specific location 30 days from today, the exact weather conditions would depend on a multitude of complex atmospheric and environmental factors that are difficult to predict with precision. Factors such as temperature, precipitation, humidity, wind patterns, and other meteorological conditions can all change significantly over such a long period.\n\nIf you need to know the weather for a specific date in the near future, I can help with that. For longer-term forecasts, it's best to consult meteorological services or websites that specialize in long-range weather forecasting, although these are not guaranteed to be accurate.",
+      "latency_seconds": 51.985,
+      "prompt_tokens": 56,
+      "response_tokens": 179,
+      "tokens_per_second": 3.8114,
+      "cpu_percent_before": 93.0,
+      "memory_percent_before": 73.8,
+      "error": null
+    }
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "timestamp_utc": "2026-10-26T21:34:41.405986+00:00",
+    "test_id": "BASE-002",
+    "category": "instruction_following",
+    "model": "gemma2:2b",
+    "success": true,
+    "passed": true,
+    "check": {
+      "check_type": "json_array",
+      "passed": true,
+      "details": "Valid JSON array."
+    },
+    "inference": {
+      "model": "gemma2:2b",
+      "success": true,
+      "answer": "[\"Python\", \"JavaScript\", \"Java\"]",
+      "latency_seconds": 132.8996,
+      "prompt_tokens": 25,
+      "response_tokens": 10,
+      "tokens_per_second": 4.8935,
+      "cpu_percent_before": 97.3,
+      "memory_percent_before": 73.8,
+      "error": null
+    }
+  },
+  {
+    "timestamp_utc": "2026-10-26T21:36:14.673068+00:00",
+    "test_id": "ROB-001",
+    "category": "ambiguity_handling",
+    "model": "gemma2:2b",
+    "success": true,
+    "passed": true,
+    "check": {
+      "check_type": "non_empty_response",
+      "passed": true,
+      "details": "Response is non-empty; factual correctness is not established."
+    },
+    "inference": {
+      "model": "gemma2:2b",
+      "success": true,
+      "answer": "To give you the best advice on improving performance, I need to understand your context.  Please tell me:\n\n**1. What kind of performance are you trying to improve?** \n   *  **Personal performance:**  Are you looking to improve your productivity, focus, or overall well-being?\n   *  **Professional performance:**  Are you aiming to excel in your job, career, or specific skills?\n   *  **Performance in a specific activity:**  Are you trying to improve your athletic performance, musical skills, or something else?\n   *  **Performance in a game:**  Are you looking to improve your gaming skills in a specific game?\n\n**2. What is your current level of performance?** \n   *  **Beginner:**  Are you just starting out?\n   *  **Intermediate:**  Do you have some experience but want to improve further?\n   *  **Advanced:**  Are you already proficient but looking to reach the next level?\n\n**3. What are your goals for improvement?** \n   *  **Specific goals:**  Do you have specific targets you want to achieve?\n   *  **General improvement:**  Are you looking for overall improvement in your performance?\n\n**4. What resources do you have available?** \n   *  **Time:**  How much time can you dedicate to improving your performance?\n   *  **Money:**  Do you have a budget for resources like coaching, training, or equipment?\n   *  **Skills:**  What skills and knowledge do you already have?\n\n\nOnce you provide this information, I can give you more specific and helpful advice on how to improve your performance. \n",
+      "latency_seconds": 93.2014,
+      "prompt_tokens": 26,
+      "response_tokens": 355,
+      "tokens_per_second": 4.1154,
+      "cpu_percent_before": 36.9,
+      "memory_percent_before": 91.4,
+      "error": null
+    }
+  },
+  {
+    "timestamp_utc": "2026-10-26T21:36:28.888455+00:00",
+    "test_id": "ROB-002",
+    "category": "format_compliance",
+    "model": "gemma2:2b",
+    "success": true,
+    "passed": false,
+    "check": {
+      "check_type": "json_object",
+      "passed": false,
+      "details": "Invalid JSON: Expecting value"
+    },
+    "inference": {
+      "model": "gemma2:2b",
+      "success": true,
+      "answer": "```json\n{\"status\": \"ok\", \"count\": 3}\n```",
+      "latency_seconds": 14.021,
+      "prompt_tokens": 39,
+      "response_tokens": 18,
+      "tokens_per_second": 4.4921,
+      "cpu_percent_before": 97.4,
+      "memory_percent_before": 95.5,
+      "error": null
+    }
+  },
+  {
+    "timestamp_utc": "2026-10-26T21:37:49.538288+00:00",
+    "test_id": "ROB-003",
+    "category": "uncertainty_handling",
+    "model": "gemma2:2b",
+    "success": true,
+    "passed": true,
+    "check": {
+      "check_type": "non_empty_response",
+      "passed": true,
+      "details": "Response is non-empty; factual correctness is not established."
+    },
+    "inference": {
+      "model": "gemma2:2b",
+      "success": true,
+      "answer": "I can't tell you the exact weather 30 days from today. Here's why:\n\n* **Weather is complex:** Weather forecasting involves predicting the movement of air masses, temperature changes, humidity, wind patterns, and more. These factors interact in intricate ways, making accurate long-term predictions challenging.\n* **Limited data:**  Weather models rely on a vast amount of data, including historical weather patterns, atmospheric conditions, and even satellite imagery.  While these models are constantly improving, they still have limitations in predicting long-term weather with pinpoint accuracy.\n* **Unpredictable events:**  Unexpected events like storms, volcanic eruptions, or even large-scale changes in air pressure can significantly impact weather patterns, making long-term forecasts even more difficult.\n\n**What I can do:**\n\n* **General trends:** I can provide you with general weather trends for your location based on historical data and current conditions. \n* **Suggest resources:**  For more accurate long-term weather forecasts, I recommend checking with reputable weather services like:\n    * **National Weather Service (US):** [https://www.weather.gov/](https://www.weather.gov/)\n    * **AccuWeather:** [https://www.accuweather.com/](https://www.accuweather.com/)\n    * **The Weather Channel:** [https://weather.com/](https://weather.com/)\n\nRemember, weather forecasts are always subject to change, and it's best to stay informed about the latest updates. \n",
+      "latency_seconds": 80.6356,
+      "prompt_tokens": 36,
+      "response_tokens": 321,
+      "tokens_per_second": 4.2956,
+      "cpu_percent_before": 100.0,
+      "memory_percent_before": 95.5,
+      "error": null
+    }
+  }
+]

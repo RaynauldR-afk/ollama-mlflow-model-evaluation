@@ -1,0 +1,576 @@
+{
+  "experiment": "Ollama Three-Model Evaluation",
+  "models": {
+    "llama3.2:latest": {
+      "successful_tests": 7,
+      "failed_tests": 0,
+      "average_score": 1.0,
+      "average_latency_seconds": 39.568,
+      "max_latency_seconds": 106.419,
+      "average_tokens_per_second": 4.9,
+      "average_system_cpu_percent": 74.88,
+      "average_system_memory_percent": 93.95,
+      "tests_per_minute": 1.516
+    },
+    "qwen2.5:3b": {
+      "successful_tests": 7,
+      "failed_tests": 0,
+      "average_score": 1.0,
+      "average_latency_seconds": 81.217,
+      "max_latency_seconds": 286.67,
+      "average_tokens_per_second": 4.647,
+      "average_system_cpu_percent": 76.91,
+      "average_system_memory_percent": 79.42,
+      "tests_per_minute": 0.739
+    },
+    "gemma2:2b": {
+      "successful_tests": 7,
+      "failed_tests": 0,
+      "average_score": 1.0,
+      "average_latency_seconds": 52.122,
+      "max_latency_seconds": 180.673,
+      "average_tokens_per_second": 4.645,
+      "average_system_cpu_percent": 75.9,
+      "average_system_memory_percent": 79.82,
+      "tests_per_minute": 1.151
+    }
+  },
+  "regression_comparison": {
+    "status": "baseline_created",
+    "message": "Run the evaluator again to compare against this baseline."
+  },
+  "results": [
+    {
+      "model": "llama3.2:latest",
+      "test_id": "functional-001",
+      "category": "functional_correctness",
+      "error": null,
+      "answer": "def is_prime(n):\n    \"\"\"\n    Checks if a number is prime.\n\n    Args:\n    n (int): The number to check.\n\n    Returns:\n    bool: True if the number is prime, False otherwise.\n    \"\"\"\n    if n <= 1:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True",
+      "latency_seconds": 106.419,
+      "prompt_tokens": 47,
+      "completion_tokens": 93,
+      "tokens_per_second": 4.753,
+      "resource": {
+        "avg_system_cpu_percent": 46.24,
+        "peak_sampled_system_cpu_percent": 100.0,
+        "avg_system_memory_percent": 89.24
+      },
+      "score": 1.0,
+      "checks": {
+        "non_empty": true,
+        "expected_keywords": true,
+        "contains_function": true,
+        "contains_return": true
+      },
+      "passed_checks": 4,
+      "total_checks": 4,
+      "passed": true
+    },
+    {
+      "model": "llama3.2:latest",
+      "test_id": "functional-002",
+      "category": "functional_correctness",
+      "error": null,
+      "answer": "To find the number of students present, we need to calculate 15% of the total number of students and then subtract that from the total number of students.\n\n15% of 200 students = 0.15 x 200 = 30\n\nThis means that 30 students are absent.\n\nTo find the number of students present, we subtract the number of absent students from the total number of students:\n\n200 (total students) - 30 (absent students) = 170\n\nTherefore, 170 students are present.",
+      "latency_seconds": 28.618,
+      "prompt_tokens": 48,
+      "completion_tokens": 107,
+      "tokens_per_second": 4.575,
+      "resource": {
+        "avg_system_cpu_percent": 90.55,
+        "peak_sampled_system_cpu_percent": 100.0,
+        "avg_system_memory_percent": 94.57
+      },
+      "score": 1.0,
+      "checks": {
+        "non_empty": true,
+        "expected_keywords": true,
+        "contains_expected_number": true
+      },
+      "passed_checks": 3,
+      "total_checks": 3,
+      "passed": true
+    },
+    {
+      "model": "llama3.2:latest",
+      "test_id": "quality-001",
+      "category": "output_quality",
+      "error": null,
+      "answer": "Retrieval-Augmented Generation (RAG) is a type of artificial intelligence (AI) model that combines the strengths of two different techniques: retrieval and generation.\n\n**Retrieval:**\nRetrieval is a process where a model searches for relevant information in a database or a large corpus of text. Think of it like a librarian searching for a book in a library. The model looks for the most relevant information related to a specific query or prompt.\n\n**Generation:**\nGeneration is the process of creating new text based on the retrieved information. It's like writing a new book using the information found in the library.\n\n**RAG:**\nRAG combines retrieval and generation to create a more effective and efficient model. The model first retrieves relevant information from a database or corpus, and then uses that information to generate new text. This approach allows the model to leverage the strengths of both retrieval and generation, resulting in more accurate and informative text.\n\n**Practical Example:**\nImagine you want to write a blog post about a new restaurant in town. You can use RAG to generate the text. Here's how it works:\n\n1. You provide the model with a prompt, such as \"Write a blog post about a new restaurant in [city name].\"\n2. The model retrieves relevant information from a database or corpus, such as reviews, menus, and descriptions of the restaurant.\n3. The model uses this retrieved information to generate a new blog post, incorporating the relevant details and descriptions.\n4. The generated text is then refined and edited to make it more readable and engaging.\n\nBy using RAG, you can create high-quality content quickly and efficiently, without having to manually research and write the entire text from scratch.\n\nIn summary, RAG is a powerful AI model that combines retrieval and generation to create more accurate and informative text. By leveraging the strengths of both techniques, RAG can help generate high-quality content quickly and efficiently.",
+      "latency_seconds": 94.239,
+      "prompt_tokens": 49,
+      "completion_tokens": 391,
+      "tokens_per_second": 4.355,
+      "resource": {
+        "avg_system_cpu_percent": 97.02,
+        "peak_sampled_system_cpu_percent": 100.0,
+        "avg_system_memory_percent": 94.68
+      },
+      "score": 1.0,
+      "checks": {
+        "non_empty": true,
+        "expected_keywords": true
+      },
+      "passed_checks": 2,
+      "total_checks": 2,
+      "passed": true
+    },
+    {
+      "model": "llama3.2:latest",
+      "test_id": "regression-001",
+      "category": "regression_testing",
+      "error": null,
+      "answer": "The result of 12 * 12 is 144.\n\nThis is because when you multiply two numbers together, you are essentially adding the first number a certain number of times, equal to the second number. In this case, 12 is multiplied by 12, so you are adding 12 together 12 times, which results in 144.",
+      "latency_seconds": 19.598,
+      "prompt_tokens": 47,
+      "completion_tokens": 71,
+      "tokens_per_second": 4.69,
+      "resource": {
+        "avg_system_cpu_percent": 85.6,
+        "peak_sampled_system_cpu_percent": 100.0,
+        "avg_system_memory_percent": 94.8
+      },
+      "score": 1.0,
+      "checks": {
+        "non_empty": true,
+        "expected_keywords": true,
+        "contains_expected_number": true
+      },
+      "passed_checks": 3,
+      "total_checks": 3,
+      "passed": true
+    },
+    {
+      "model": "llama3.2:latest",
+      "test_id": "hallucination-001",
+      "category": "hallucination_checks",
+      "error": null,
+      "answer": "7. A standard week consists of seven days.",
+      "latency_seconds": 6.154,
+      "prompt_tokens": 43,
+      "completion_tokens": 11,
+      "tokens_per_second": 5.717,
+      "resource": {
+        "avg_system_cpu_percent": 58.75,
+        "peak_sampled_system_cpu_percent": 100.0,
+        "avg_system_memory_percent": 94.73
+      },
+      "score": 1.0,
+      "checks": {
+        "non_empty": true,
+        "expected_keywords": true,
+        "contains_expected_number": true
+      },
+      "passed_checks": 3,
+      "total_checks": 3,
+      "passed": true
+    },
+    {
+      "model": "llama3.2:latest",
+      "test_id": "robustness-001",
+      "category": "robustness",
+      "error": null,
+      "answer": "{\"status\": \"ok\", \"count\": 3}",
+      "latency_seconds": 7.862,
+      "prompt_tokens": 59,
+      "completion_tokens": 13,
+      "tokens_per_second": 5.285,
+      "resource": {
+        "avg_system_cpu_percent": 63.96,
+        "peak_sampled_system_cpu_percent": 100.0,
+        "avg_system_memory_percent": 94.82
+      },
+      "score": 1.0,
+      "checks": {
+        "non_empty": true,
+        "expected_keywords": true,
+        "valid_json": true,
+        "json_values_match": true
+      },
+      "passed_checks": 4,
+      "total_checks": 4,
+      "passed": true
+    },
+    {
+      "model": "llama3.2:latest",
+      "test_id": "latency-001",
+      "category": "latency_throughput",
+      "error": null,
+      "answer": "A Python dictionary is an unordered collection of key-value pairs, where each key is unique and maps to a specific value. Dictionaries are mutable data structures that allow for efficient storage and retrieval of data, making them a fundamental data type in Python programming.",
+      "latency_seconds": 14.089,
+      "prompt_tokens": 37,
+      "completion_tokens": 51,
+      "tokens_per_second": 4.925,
+      "resource": {
+        "avg_system_cpu_percent": 82.05,
+        "peak_sampled_system_cpu_percent": 100.0,
+        "avg_system_memory_percent": 94.83
+      },
+      "score": 1.0,
+      "checks": {
+        "non_empty": true,
+        "expected_keywords": true
+      },
+      "passed_checks": 2,
+      "total_checks": 2,
+      "passed": true
+    },
+    {
+      "model": "qwen2.5:3b",
+      "test_id": "functional-001",
+      "category": "functional_correctness",
+      "error": null,
+      "answer": "Certainly! Below is a Python function named `is_prime(n)` that checks if a number is prime or not. The function will return `True` if the number is prime and `False` otherwise.\n\n```python\ndef is_prime(n):\n    \"\"\"\n    Check if a number is a prime number.\n\n    Parameters:\n    n (int): The number to check.\n\n    Returns:\n    bool: True if n is a prime number, False otherwise.\n    \"\"\"\n    if n <= 1:\n        return False\n    if n <= 3:\n        return True\n    if n % 2 == 0 or n % 3 == 0:\n        return False\n    i = 5\n    while i * i <= n:\n        if n % i == 0 or n % (i + 2) == 0:\n            return False\n        i += 6\n    return True\n\n# Test the function\nprint(is_prime(2))   # True\nprint(is_prime(3))   # True\nprint(is_prime(4))   # False\nprint(is_prime(5))   # True\nprint(is_prime(17))  # True\nprint(is_prime(18))  # False\nprint(is_prime(19))  # True\n```\n\nThis function works by first handling the simple cases (numbers less than or equal to 1, and 2 and 3, which are prime). Then it checks divisibility by 2 and 3. After that, it checks divisibility for numbers up to the square root of `n`, skipping even numbers and multiples of 3 by checking divisibility by 5 and then incrementing by 6 (i.e., checking 5, 11, 17, 23, etc.). This is an optimization over checking all numbers up to `n-1`.",
+      "latency_seconds": 286.67,
+      "prompt_tokens": 51,
+      "completion_tokens": 386,
+      "tokens_per_second": 4.554,
+      "resource": {
+        "avg_system_cpu_percent": 50.48,
+        "peak_sampled_system_cpu_percent": 100.0,
+        "avg_system_memory_percent": 96.09
+      },
+      "score": 1.0,
+      "checks": {
+        "non_empty": true,
+        "expected_keywords": true,
+        "contains_function": true,
+        "contains_return": true
+      },
+      "passed_checks": 4,
+      "total_checks": 4,
+      "passed": true
+    },
+    {
+      "model": "qwen2.5:3b",
+      "test_id": "functional-002",
+      "category": "functional_correctness",
+      "error": null,
+      "answer": "To determine how many students are present, we first need to calculate how many students are absent. We know that 15% of the students are absent. Here's the step-by-step calculation:\n\n1. Calculate the number of absent students:\n   \\[\n   \\text{Number of absent students} = 15\\% \\times 200 = \\frac{15}{100} \\times 200 = 0.15 \\times 200 = 30\n   \\]\n\n2. Subtract the number of absent students from the total number of students to find the number of students who are present:\n   \\[\n   \\text{Number of present students} = 200 - 30 = 170\n   \\]\n\nSo, the number of students who are present is 170.",
+      "latency_seconds": 50.155,
+      "prompt_tokens": 55,
+      "completion_tokens": 180,
+      "tokens_per_second": 4.049,
+      "resource": {
+        "avg_system_cpu_percent": 89.03,
+        "peak_sampled_system_cpu_percent": 100.0,
+        "avg_system_memory_percent": 79.89
+      },
+      "score": 1.0,
+      "checks": {
+        "non_empty": true,
+        "expected_keywords": true,
+        "contains_expected_number": true
+      },
+      "passed_checks": 3,
+      "total_checks": 3,
+      "passed": true
+    },
+    {
+      "model": "qwen2.5:3b",
+      "test_id": "quality-001",
+      "category": "output_quality",
+      "error": null,
+      "answer": "Retrieval-Augmented Generation (RAG) is a technique used in natural language processing (NLP) that combines the strengths of two different approaches: retrieval and generation. The goal of RAG is to enhance the performance of a generation model by using a pre-trained retrieval model to find the most relevant documents from a large corpus of text, and then use these documents to inform the generation process.\n\n### How Retrieval Works in RAG\n\n1. **Document Retrieval**: The retrieval model, often a pre-trained transformer model like BERT, is used to find the most relevant documents from a large corpus of text that are relevant to the input query or context. This process is called \"retrieval.\" The retrieval model is trained to understand the context and relevance of documents, and it can be fine-tuned on specific domains or tasks.\n\n2. **Relevance Scoring**: The retrieval model assigns a score to each document based on how relevant it is to the input query or context. This score is used to determine which documents are most relevant and should be used for the generation process.\n\n3. **Relevant Document Selection**: The top-ranked documents are selected based on their relevance scores. These documents are then used as a reference to inform the generation process.\n\n### Practical Example\n\nLet's consider a practical example where RAG is used to generate a summary of a research paper:\n\n1. **Input Query or Context**: Suppose a user wants to know what a research paper is about. The user might input a query like \"What is the main focus of this research paper?\"\n\n2. **Document Retrieval**: The retrieval model, such as BERT, is used to find the most relevant documents from a database of research papers. The model might find several documents that are relevant to the query, such as abstracts, introductions, or summaries of the research paper.\n\n3. **Relevance Scoring**: The retrieval model scores each document based on how relevant it is to the query. For example, the model might score the abstract of the research paper higher than the introduction because the abstract is more likely to contain the main focus of the research.\n\n4. **Relevant Document Selection**: The top-ranked document (the abstract) is selected for the generation process. The abstract is likely to contain the main focus of the research paper.\n\n5. **Generation**: The generation model, such as a transformer model like T5, is used to generate a summary of the research paper based on the selected document. The generation model uses the abstract as input and generates a summary that captures the main focus of the research paper.\n\n6. **Output**: The generated summary is then presented to the user. For example, the summary might say, \"This research paper focuses on the development and evaluation of a new machine learning algorithm for image recognition.\"\n\nIn this example, the retrieval model helps the generation model by providing the most relevant document, which is the abstract of the research paper. The generation model then uses this document to generate a summary that is more accurate and relevant to the user's query.\n\n### Summary\n\nRetrieval-Augmented Generation (RAG) is a technique that uses a retrieval model to find relevant documents from a large corpus and then uses these documents to inform the generation process. This approach helps improve the quality and relevance of the generated text by leveraging the strengths of both retrieval and generation models.",
+      "latency_seconds": 186.064,
+      "prompt_tokens": 53,
+      "completion_tokens": 682,
+      "tokens_per_second": 3.779,
+      "resource": {
+        "avg_system_cpu_percent": 99.33,
+        "peak_sampled_system_cpu_percent": 100.0,
+        "avg_system_memory_percent": 75.19
+      },
+      "score": 1.0,
+      "checks": {
+        "non_empty": true,
+        "expected_keywords": true
+      },
+      "passed_checks": 2,
+      "total_checks": 2,
+      "passed": true
+    },
+    {
+      "model": "qwen2.5:3b",
+      "test_id": "regression-001",
+      "category": "regression_testing",
+      "error": null,
+      "answer": "The result of 12 * 12 in Python is 144. \n\nHere's a short explanation: In Python, as in most programming languages, the multiplication operator (*) is used to multiply two numbers. When you multiply 12 by 12, you are essentially adding 12 to itself 12 times, which results in 144.",
+      "latency_seconds": 22.431,
+      "prompt_tokens": 53,
+      "completion_tokens": 79,
+      "tokens_per_second": 4.591,
+      "resource": {
+        "avg_system_cpu_percent": 90.63,
+        "peak_sampled_system_cpu_percent": 100.0,
+        "avg_system_memory_percent": 76.25
+      },
+      "score": 1.0,
+      "checks": {
+        "non_empty": true,
+        "expected_keywords": true,
+        "contains_expected_number": true
+      },
+      "passed_checks": 3,
+      "total_checks": 3,
+      "passed": true
+    },
+    {
+      "model": "qwen2.5:3b",
+      "test_id": "hallucination-001",
+      "category": "hallucination_checks",
+      "error": null,
+      "answer": "7 days in a standard week.",
+      "latency_seconds": 5.742,
+      "prompt_tokens": 47,
+      "completion_tokens": 8,
+      "tokens_per_second": 5.897,
+      "resource": {
+        "avg_system_cpu_percent": 56.94,
+        "peak_sampled_system_cpu_percent": 100.0,
+        "avg_system_memory_percent": 76.42
+      },
+      "score": 1.0,
+      "checks": {
+        "non_empty": true,
+        "expected_keywords": true,
+        "contains_expected_number": true
+      },
+      "passed_checks": 3,
+      "total_checks": 3,
+      "passed": true
+    },
+    {
+      "model": "qwen2.5:3b",
+      "test_id": "robustness-001",
+      "category": "robustness",
+      "error": null,
+      "answer": "{\"status\": \"ok\", \"count\": 3}",
+      "latency_seconds": 7.948,
+      "prompt_tokens": 63,
+      "completion_tokens": 13,
+      "tokens_per_second": 4.922,
+      "resource": {
+        "avg_system_cpu_percent": 67.93,
+        "peak_sampled_system_cpu_percent": 100.0,
+        "avg_system_memory_percent": 76.37
+      },
+      "score": 1.0,
+      "checks": {
+        "non_empty": true,
+        "expected_keywords": true,
+        "valid_json": true,
+        "json_values_match": true
+      },
+      "passed_checks": 4,
+      "total_checks": 4,
+      "passed": true
+    },
+    {
+      "model": "qwen2.5:3b",
+      "test_id": "latency-001",
+      "category": "latency_throughput",
+      "error": null,
+      "answer": "A Python dictionary is an unordered collection of key-value pairs, where each key is unique and allows for fast data retrieval.",
+      "latency_seconds": 9.51,
+      "prompt_tokens": 41,
+      "completion_tokens": 25,
+      "tokens_per_second": 4.738,
+      "resource": {
+        "avg_system_cpu_percent": 84.02,
+        "peak_sampled_system_cpu_percent": 100.0,
+        "avg_system_memory_percent": 75.75
+      },
+      "score": 1.0,
+      "checks": {
+        "non_empty": true,
+        "expected_keywords": true
+      },
+      "passed_checks": 2,
+      "total_checks": 2,
+      "passed": true
+    },
+    {
+      "model": "gemma2:2b",
+      "test_id": "functional-001",
+      "category": "functional_correctness",
+      "error": null,
+      "answer": "```python\ndef is_prime(n):\n  \"\"\"\n  Checks if a number is prime.\n\n  Args:\n    n: The number to check.\n\n  Returns:\n    True if n is prime, False otherwise.\n  \"\"\"\n  # Prime numbers are greater than 1\n  if n <= 1:\n    return False\n\n  # Check for divisibility from 2 to the square root of n\n  for i in range(2, int(n**0.5) + 1):\n    if n % i == 0:\n      return False\n\n  # If no divisors are found, n is prime\n  return True\n\n# Example usage\nnumber = 17\nif is_prime(number):\n  print(f\"{number} is a prime number\")\nelse:\n  print(f\"{number} is not a prime number\")\n```\n\n**Explanation:**\n\n1. **Function Definition:**\n   - `def is_prime(n):` defines a function named `is_prime` that takes an integer `n` as input.\n\n2. **Base Cases:**\n   - `if n <= 1:`: If the number is less than or equal to 1, it's not prime, so return `False`.\n\n3. **Iteration and Divisibility Check:**\n   - `for i in range(2, int(n**0.5) + 1):`:  We iterate from 2 to the square root of `n`.  \n   - `if n % i == 0:`:  If `n` is divisible by any number `i` in this range, it's not prime, so return `False`.\n\n4. **Prime Determination:**\n   - `return True`: If the loop completes without finding any divisors, it means `n` is prime, so return `True`.\n\n5. **Example Usage:**\n   - The code demonstrates how to call the `is_prime` function and print the result.\n\n\n**How it Works:**\n\n- **Prime Numbers:** A prime number is a whole number greater than 1 that has only two divisors: 1 and itself.\n- **Optimization:** The code optimizes by checking divisibility only up to the square root of `n`. If a number has a divisor greater than its square root, it must also have a divisor smaller than its square root. \n",
+      "latency_seconds": 180.673,
+      "prompt_tokens": 33,
+      "completion_tokens": 513,
+      "tokens_per_second": 4.685,
+      "resource": {
+        "avg_system_cpu_percent": 72.18,
+        "peak_sampled_system_cpu_percent": 100.0,
+        "avg_system_memory_percent": 85.23
+      },
+      "score": 1.0,
+      "checks": {
+        "non_empty": true,
+        "expected_keywords": true,
+        "contains_function": true,
+        "contains_return": true
+      },
+      "passed_checks": 4,
+      "total_checks": 4,
+      "passed": true
+    },
+    {
+      "model": "gemma2:2b",
+      "test_id": "functional-002",
+      "category": "functional_correctness",
+      "error": null,
+      "answer": "Here's how to calculate the number of students present:\n\n**1. Calculate the number of absent students:**\n\n* Multiply the total number of students by the percentage of absences: 200 students * 0.15 = 30 students\n\n**2. Calculate the number of present students:**\n\n* Subtract the number of absent students from the total number of students: 200 students - 30 students = 170 students\n\n**Therefore, 170 students are present at the university.** \n",
+      "latency_seconds": 27.192,
+      "prompt_tokens": 35,
+      "completion_tokens": 113,
+      "tokens_per_second": 5.157,
+      "resource": {
+        "avg_system_cpu_percent": 91.97,
+        "peak_sampled_system_cpu_percent": 100.0,
+        "avg_system_memory_percent": 88.25
+      },
+      "score": 1.0,
+      "checks": {
+        "non_empty": true,
+        "expected_keywords": true,
+        "contains_expected_number": true
+      },
+      "passed_checks": 3,
+      "total_checks": 3,
+      "passed": true
+    },
+    {
+      "model": "gemma2:2b",
+      "test_id": "quality-001",
+      "category": "output_quality",
+      "error": null,
+      "answer": "Imagine you're writing a story about a magical dragon. You want to include details about its scales, its roar, and its treasure hoard. \n\n**Retrieval-augmented generation (RAG)** is like having a giant library full of books about dragons. \n\n**Here's how it works:**\n\n1. **Retrieval:** First, the RAG model searches through its library (the \"retrieval system\") to find all the relevant information about dragons. This could be from books, articles, or even websites. \n2. **Understanding:** The model then analyzes the retrieved information to understand the context and meaning of the dragon's characteristics. \n3. **Generation:** Finally, the model uses this understanding to generate a new story about the dragon, incorporating the details it found in the library.\n\n**How does retrieval work?**\n\n* **Vector embeddings:**  Think of each piece of information (like a description of a dragon's scales) as a tiny code representing its meaning. This code is called a \"vector.\"\n* **Similarity search:** The RAG model uses these codes to find similar ones in its library. It's like searching for a specific word in a dictionary, but instead of just finding the word, it finds the most similar words and their context.\n* **Retrieval:** The model then uses this information to generate a new story.\n\n**Practical example:**\n\nLet's say you want to write a story about a dragon that lives in a cave. You ask the RAG model to write a story about a dragon living in a cave. \n\n1. **Retrieval:** The RAG model searches its library for information about dragons, caves, and stories about dragons living in caves. \n2. **Understanding:** The model analyzes the retrieved information and understands that dragons are often depicted as living in caves, and that caves are often associated with mystery and danger.\n3. **Generation:** The model uses this understanding to generate a story about a dragon living in a cave, incorporating details about its cave, its personality, and its adventures.\n\n**In short:** RAG combines the power of language models (like ChatGPT) with the vast knowledge of a library to generate more creative and informative content. \n\n\nLet me know if you'd like to explore more about RAG! \n",
+      "latency_seconds": 106.426,
+      "prompt_tokens": 31,
+      "completion_tokens": 472,
+      "tokens_per_second": 4.644,
+      "resource": {
+        "avg_system_cpu_percent": 97.0,
+        "peak_sampled_system_cpu_percent": 100.0,
+        "avg_system_memory_percent": 87.65
+      },
+      "score": 1.0,
+      "checks": {
+        "non_empty": true,
+        "expected_keywords": true
+      },
+      "passed_checks": 2,
+      "total_checks": 2,
+      "passed": true
+    },
+    {
+      "model": "gemma2:2b",
+      "test_id": "regression-001",
+      "category": "regression_testing",
+      "error": null,
+      "answer": "The result of 12 * 12 is **144**.\n\n**Explanation:**\n\nIn Python, the multiplication operator (`*`) is used to multiply two numbers. When you multiply 12 by 12, you get 144. \n",
+      "latency_seconds": 19.15,
+      "prompt_tokens": 33,
+      "completion_tokens": 58,
+      "tokens_per_second": 4.544,
+      "resource": {
+        "avg_system_cpu_percent": 89.51,
+        "peak_sampled_system_cpu_percent": 100.0,
+        "avg_system_memory_percent": 74.97
+      },
+      "score": 1.0,
+      "checks": {
+        "non_empty": true,
+        "expected_keywords": true,
+        "contains_expected_number": true
+      },
+      "passed_checks": 3,
+      "total_checks": 3,
+      "passed": true
+    },
+    {
+      "model": "gemma2:2b",
+      "test_id": "hallucination-001",
+      "category": "hallucination_checks",
+      "error": null,
+      "answer": "7 \nA standard week has seven days. \n",
+      "latency_seconds": 7.065,
+      "prompt_tokens": 27,
+      "completion_tokens": 13,
+      "tokens_per_second": 4.816,
+      "resource": {
+        "avg_system_cpu_percent": 55.59,
+        "peak_sampled_system_cpu_percent": 100.0,
+        "avg_system_memory_percent": 73.7
+      },
+      "score": 1.0,
+      "checks": {
+        "non_empty": true,
+        "expected_keywords": true,
+        "contains_expected_number": true
+      },
+      "passed_checks": 3,
+      "total_checks": 3,
+      "passed": true
+    },
+    {
+      "model": "gemma2:2b",
+      "test_id": "robustness-001",
+      "category": "robustness",
+      "error": null,
+      "answer": "{\"status\": \"ok\", \"count\": 3}",
+      "latency_seconds": 8.996,
+      "prompt_tokens": 43,
+      "completion_tokens": 13,
+      "tokens_per_second": 4.443,
+      "resource": {
+        "avg_system_cpu_percent": 42.63,
+        "peak_sampled_system_cpu_percent": 99.7,
+        "avg_system_memory_percent": 74.4
+      },
+      "score": 1.0,
+      "checks": {
+        "non_empty": true,
+        "expected_keywords": true,
+        "valid_json": true,
+        "json_values_match": true
+      },
+      "passed_checks": 4,
+      "total_checks": 4,
+      "passed": true
+    },
+    {
+      "model": "gemma2:2b",
+      "test_id": "latency-001",
+      "category": "latency_throughput",
+      "error": null,
+      "answer": "A Python dictionary is a collection of key-value pairs, where each key is unique and maps to a corresponding value.  It's like a real-world dictionary, where words (keys) have definitions (values). \n",
+      "latency_seconds": 15.354,
+      "prompt_tokens": 20,
+      "completion_tokens": 48,
+      "tokens_per_second": 4.228,
+      "resource": {
+        "avg_system_cpu_percent": 82.42,
+        "peak_sampled_system_cpu_percent": 100.0,
+        "avg_system_memory_percent": 74.55
+      },
+      "score": 1.0,
+      "checks": {
+        "non_empty": true,
+        "expected_keywords": true
+      },
+      "passed_checks": 2,
+      "total_checks": 2,
+      "passed": true
+    }
+  ],
+  "notes": [
+    "Scores are heuristic checks, not a complete measure of answer quality.",
+    "Hallucination checks use simple expected-answer checks, not a true hallucination detector.",
+    "CPU and memory readings are system-wide samples and may miss short peaks.",
+    "Throughput uses Ollama generation duration when available.",
+    "The first run creates a regression baseline; subsequent runs compare against it."
+  ]
+}

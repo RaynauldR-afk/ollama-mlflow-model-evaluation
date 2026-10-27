@@ -1,0 +1,302 @@
+[
+  {
+    "timestamp_utc": "2026-10-26T21:22:43.615227+00:00",
+    "test_id": "BASE-002",
+    "category": "instruction_following",
+    "model": "llama3.2:3b",
+    "success": true,
+    "passed": true,
+    "check": {
+      "check_type": "json_array",
+      "passed": true,
+      "details": "Valid JSON array."
+    },
+    "inference": {
+      "model": "llama3.2:3b",
+      "success": true,
+      "answer": "[\"Python\", \"JavaScript\", \"C++\"]",
+      "latency_seconds": 60.1149,
+      "prompt_tokens": 41,
+      "response_tokens": 11,
+      "tokens_per_second": 4.1962,
+      "cpu_percent_before": 45.3,
+      "memory_percent_before": 59.9,
+      "error": null
+    }
+  },
+  {
+    "timestamp_utc": "2026-10-26T21:24:16.155261+00:00",
+    "test_id": "ROB-001",
+    "category": "ambiguity_handling",
+    "model": "llama3.2:3b",
+    "success": true,
+    "passed": true,
+    "check": {
+      "check_type": "non_empty_response",
+      "passed": true,
+      "details": "Response is non-empty; factual correctness is not established."
+    },
+    "inference": {
+      "model": "llama3.2:3b",
+      "success": true,
+      "answer": "To provide effective suggestions for improving performance, I need to know more about the specific context and areas of concern. Here are some questions to help me better understand the situation:\n\n1. **What type of performance are you trying to improve?** Is it related to:\n\t* Physical performance (e.g., athletic, fitness, or endurance)?\n\t* Mental performance (e.g., cognitive, emotional, or behavioral)?\n\t* Productivity or efficiency in a specific task or profession?\n\t* Overall well-being or quality of life?\n2. **What are the specific goals or objectives?** Are you trying to:\n\t* Increase speed or accuracy?\n\t* Improve focus or concentration?\n\t* Enhance creativity or problem-solving skills?\n\t* Reduce stress or anxiety?\n3. **What is the current environment or situation?** Are you:\n\t* Working in a team or individually?\n\t* Under time pressure or with limited resources?\n\t* Dealing with distractions or interruptions?\n\t* Experiencing physical or mental fatigue?\n4. **What are the available resources?** Do you have:\n\t* Access to training or coaching?\n\t* The necessary equipment or tools?\n\t* A supportive network or community?\n\t* A clear understanding of your strengths and weaknesses?\n5. **What are the potential barriers or obstacles?** Are you facing:\n\t* Self-doubt or confidence issues?\n\t* Fear of failure or risk-taking?\n\t* Limited motivation or engagement?\n\t* External factors like competition, pressure, or expectations?\n\nOnce I have a better understanding of these factors, I can provide more tailored and effective suggestions for improving performance.",
+      "latency_seconds": 92.5383,
+      "prompt_tokens": 43,
+      "response_tokens": 333,
+      "tokens_per_second": 3.7776,
+      "cpu_percent_before": 55.9,
+      "memory_percent_before": 77.8,
+      "error": null
+    }
+  },
+  {
+    "timestamp_utc": "2026-10-26T21:24:24.729712+00:00",
+    "test_id": "ROB-002",
+    "category": "format_compliance",
+    "model": "llama3.2:3b",
+    "success": true,
+    "passed": true,
+    "check": {
+      "check_type": "json_object",
+      "passed": true,
+      "details": "JSON object matches expected structure and values."
+    },
+    "inference": {
+      "model": "llama3.2:3b",
+      "success": true,
+      "answer": "{\"status\": \"ok\", \"count\": 3}",
+      "latency_seconds": 8.5669,
+      "prompt_tokens": 55,
+      "response_tokens": 13,
+      "tokens_per_second": 4.3787,
+      "cpu_percent_before": 98.6,
+      "memory_percent_before": 79.0,
+      "error": null
+    }
+  },
+  {
+    "timestamp_utc": "2026-10-26T21:26:18.118349+00:00",
+    "test_id": "ROB-003",
+    "category": "uncertainty_handling",
+    "model": "llama3.2:3b",
+    "success": true,
+    "passed": true,
+    "check": {
+      "check_type": "non_empty_response",
+      "passed": true,
+      "details": "Response is non-empty; factual correctness is not established."
+    },
+    "inference": {
+      "model": "llama3.2:3b",
+      "success": true,
+      "answer": "I'm a large language model, I don't have the ability to access real-time weather data or your current location. However, I can provide some general information about predicting weather 30 days in advance.\n\nPredicting weather 30 days in advance is a challenging task, even for the most advanced weather forecasting models. There are several reasons for this:\n\n1. **Complexity of atmospheric dynamics**: The atmosphere is a complex system, and small changes in atmospheric conditions can lead to large and unpredictable changes in weather patterns.\n2. **Limited data**: Weather forecasting models rely on a vast amount of data, including atmospheric conditions, ocean currents, and land surface conditions. However, there are still gaps in data coverage, particularly over remote or oceanic areas.\n3. **Model limitations**: Weather forecasting models are based on mathematical equations that describe the behavior of the atmosphere. However, these models are simplified representations of the real world and can't capture all the nuances of atmospheric behavior.\n4. **Chaos theory**: The atmosphere is a chaotic system, meaning small changes in initial conditions can lead to drastically different outcomes. This makes it difficult to predict weather patterns with high accuracy.\n\nGiven these limitations, predicting the exact weather 30 days in advance is not reliable. However, I can suggest some ways to get an idea of the weather forecast for your location:\n\n1. **Check online weather forecasts**: Websites like AccuWeather, Weather.com, or the National Weather Service (NWS) provide current and forecasted weather conditions for your location.\n2. **Use a weather app**: Many smartphones come with built-in weather apps that provide current and forecasted weather conditions.\n3. **Check social media and news**: Follow local news and weather reports on social media to get an idea of the current weather conditions and forecast.\n\nKeep in mind that weather forecasts are subject to change, and it's always a good idea to check the forecast multiple times before making any plans.",
+      "latency_seconds": 113.386,
+      "prompt_tokens": 51,
+      "response_tokens": 391,
+      "tokens_per_second": 3.6233,
+      "cpu_percent_before": 94.1,
+      "memory_percent_before": 78.5,
+      "error": null
+    }
+  },
+  {
+    "timestamp_utc": "2026-10-26T21:28:19.345879+00:00",
+    "test_id": "BASE-002",
+    "category": "instruction_following",
+    "model": "qwen2.5:3b",
+    "success": true,
+    "passed": true,
+    "check": {
+      "check_type": "json_array",
+      "passed": true,
+      "details": "Valid JSON array."
+    },
+    "inference": {
+      "model": "qwen2.5:3b",
+      "success": true,
+      "answer": "[\"Java\", \"Python\", \"JavaScript\"]",
+      "latency_seconds": 101.864,
+      "prompt_tokens": 45,
+      "response_tokens": 10,
+      "tokens_per_second": 4.165,
+      "cpu_percent_before": 88.1,
+      "memory_percent_before": 77.8,
+      "error": null
+    }
+  },
+  {
+    "timestamp_utc": "2026-10-26T21:31:23.074318+00:00",
+    "test_id": "ROB-001",
+    "category": "ambiguity_handling",
+    "model": "qwen2.5:3b",
+    "success": true,
+    "passed": true,
+    "check": {
+      "check_type": "non_empty_response",
+      "passed": true,
+      "details": "Response is non-empty; factual correctness is not established."
+    },
+    "inference": {
+      "model": "qwen2.5:3b",
+      "success": true,
+      "answer": "To effectively improve performance, it's crucial to have a clear understanding of what aspects of performance you are aiming to enhance and what specific information is missing. Here are some general steps and areas to consider, but please note that the specific suggestions will depend on the context (e.g., software performance, hardware performance, process efficiency, etc.).\n\n### 1. Identify the Specific Area of Performance\n- **Software Performance**: CPU usage, memory management, disk I/O, network latency, etc.\n- **Hardware Performance**: CPU speed, memory capacity, storage speed, network bandwidth, etc.\n- **Process Efficiency**: Workflow, resource allocation, task management, etc.\n\n### 2. Gather Relevant Data\n- **Performance Metrics**: Collect data on the current performance metrics (e.g., CPU usage, memory usage, response times, etc.).\n- **Usage Patterns**: Understand how the system or process is used (e.g., peak usage times, typical workloads, etc.).\n- **Resource Utilization**: Monitor resource usage to identify bottlenecks.\n- **Error Logs**: Analyze error logs to understand what might be causing performance issues.\n\n### 3. Analyze the Data\n- **Identify Bottlenecks**: Use the data to pinpoint where performance issues are occurring.\n- **Analyze Trends**: Look for patterns or trends in the data that might indicate underlying issues.\n- **Compare with Benchmarks**: Compare current performance with benchmarks or industry standards.\n\n### 4. Prioritize Improvements\n- **Critical Areas**: Focus on areas that have the most significant impact on performance.\n- **Impact on Users**: Prioritize improvements that will have the most positive impact on user experience.\n\n### 5. Implement Solutions\n- **Software Optimization**: Optimize code, use more efficient algorithms, reduce resource usage, etc.\n- **Hardware Upgrades**: Replace or upgrade hardware components that are bottlenecks.\n- **Process Changes**: Refine workflows, optimize resource allocation, etc.\n\n### 6. Monitor and Evaluate\n- **Continuous Monitoring**: Set up monitoring systems to track performance over time.\n- **Performance Testing**: Regularly test performance to ensure improvements are maintained.\n- **Feedback Loop**: Use feedback from users and monitoring data to identify and address new issues.\n\n### 7. Consider Scalability\n- **Scalability**: Ensure that the system can handle increased loads without degrading performance.\n- **Future-Proofing**: Design systems that can scale as needs change.\n\n### 8. Consider Security and Compliance\n- **Security**: Ensure that performance improvements do not compromise security.\n- **Compliance**: Ensure that performance improvements comply with relevant regulations and standards.\n\n### 9. Document and Communicate\n- **Documentation**: Keep detailed records of the performance improvements and the rationale behind them.\n- **Communication**: Keep stakeholders informed about the performance improvements and their benefits.\n\n### 10. Continuous Improvement\n- **Iterative Process**: Performance improvements are often iterative, with ongoing refinement and optimization.\n\nBy following these steps and considering the specific context, you can systematically improve performance. If you have a specific scenario or area in mind, I can provide more detailed suggestions.",
+      "latency_seconds": 183.7004,
+      "prompt_tokens": 47,
+      "response_tokens": 638,
+      "tokens_per_second": 3.5685,
+      "cpu_percent_before": 42.0,
+      "memory_percent_before": 91.5,
+      "error": null
+    }
+  },
+  {
+    "timestamp_utc": "2026-10-26T21:31:34.167022+00:00",
+    "test_id": "ROB-002",
+    "category": "format_compliance",
+    "model": "qwen2.5:3b",
+    "success": true,
+    "passed": false,
+    "check": {
+      "check_type": "json_object",
+      "passed": false,
+      "details": "Invalid JSON: Expecting value"
+    },
+    "inference": {
+      "model": "qwen2.5:3b",
+      "success": true,
+      "answer": "```json\n{\n  \"status\": \"ok\",\n  \"count\": 3\n}\n```",
+      "latency_seconds": 10.9169,
+      "prompt_tokens": 59,
+      "response_tokens": 21,
+      "tokens_per_second": 4.1008,
+      "cpu_percent_before": 99.3,
+      "memory_percent_before": 74.5,
+      "error": null
+    }
+  },
+  {
+    "timestamp_utc": "2026-10-26T21:32:26.243593+00:00",
+    "test_id": "ROB-003",
+    "category": "uncertainty_handling",
+    "model": "qwen2.5:3b",
+    "success": true,
+    "passed": true,
+    "check": {
+      "check_type": "non_empty_response",
+      "passed": true,
+      "details": "Response is non-empty; factual correctness is not established."
+    },
+    "inference": {
+      "model": "qwen2.5:3b",
+      "success": true,
+      "answer": "I'm sorry, but I don't have real-time access to current weather data or the ability to predict the weather 30 days into the future. Weather forecasting becomes increasingly uncertain as we look further into the future, especially beyond a week. Accurate weather predictions for such a long-term horizon are not reliable.\n\nFor your specific location 30 days from today, the exact weather conditions would depend on a multitude of complex atmospheric and environmental factors that are difficult to predict with precision. Factors such as temperature, precipitation, humidity, wind patterns, and other meteorological conditions can all change significantly over such a long period.\n\nIf you need to know the weather for a specific date in the near future, I can help with that. For longer-term forecasts, it's best to consult meteorological services or websites that specialize in long-range weather forecasting, although these are not guaranteed to be accurate.",
+      "latency_seconds": 51.985,
+      "prompt_tokens": 56,
+      "response_tokens": 179,
+      "tokens_per_second": 3.8114,
+      "cpu_percent_before": 93.0,
+      "memory_percent_before": 73.8,
+      "error": null
+    }
+  },
+  {
+    "timestamp_utc": "2026-10-26T21:34:41.405986+00:00",
+    "test_id": "BASE-002",
+    "category": "instruction_following",
+    "model": "gemma2:2b",
+    "success": true,
+    "passed": true,
+    "check": {
+      "check_type": "json_array",
+      "passed": true,
+      "details": "Valid JSON array."
+    },
+    "inference": {
+      "model": "gemma2:2b",
+      "success": true,
+      "answer": "[\"Python\", \"JavaScript\", \"Java\"]",
+      "latency_seconds": 132.8996,
+      "prompt_tokens": 25,
+      "response_tokens": 10,
+      "tokens_per_second": 4.8935,
+      "cpu_percent_before": 97.3,
+      "memory_percent_before": 73.8,
+      "error": null
+    }
+  },
+  {
+    "timestamp_utc": "2026-10-26T21:36:14.673068+00:00",
+    "test_id": "ROB-001",
+    "category": "ambiguity_handling",
+    "model": "gemma2:2b",
+    "success": true,
+    "passed": true,
+    "check": {
+      "check_type": "non_empty_response",
+      "passed": true,
+      "details": "Response is non-empty; factual correctness is not established."
+    },
+    "inference": {
+      "model": "gemma2:2b",
+      "success": true,
+      "answer": "To give you the best advice on improving performance, I need to understand your context.  Please tell me:\n\n**1. What kind of performance are you trying to improve?** \n   *  **Personal performance:**  Are you looking to improve your productivity, focus, or overall well-being?\n   *  **Professional performance:**  Are you aiming to excel in your job, career, or specific skills?\n   *  **Performance in a specific activity:**  Are you trying to improve your athletic performance, musical skills, or something else?\n   *  **Performance in a game:**  Are you looking to improve your gaming skills in a specific game?\n\n**2. What is your current level of performance?** \n   *  **Beginner:**  Are you just starting out?\n   *  **Intermediate:**  Do you have some experience but want to improve further?\n   *  **Advanced:**  Are you already proficient but looking to reach the next level?\n\n**3. What are your goals for improvement?** \n   *  **Specific goals:**  Do you have specific targets you want to achieve?\n   *  **General improvement:**  Are you looking for overall improvement in your performance?\n\n**4. What resources do you have available?** \n   *  **Time:**  How much time can you dedicate to improving your performance?\n   *  **Money:**  Do you have a budget for resources like coaching, training, or equipment?\n   *  **Skills:**  What skills and knowledge do you already have?\n\n\nOnce you provide this information, I can give you more specific and helpful advice on how to improve your performance. \n",
+      "latency_seconds": 93.2014,
+      "prompt_tokens": 26,
+      "response_tokens": 355,
+      "tokens_per_second": 4.1154,
+      "cpu_percent_before": 36.9,
+      "memory_percent_before": 91.4,
+      "error": null
+    }
+  },
+  {
+    "timestamp_utc": "2026-10-26T21:36:28.888455+00:00",
+    "test_id": "ROB-002",
+    "category": "format_compliance",
+    "model": "gemma2:2b",
+    "success": true,
+    "passed": false,
+    "check": {
+      "check_type": "json_object",
+      "passed": false,
+      "details": "Invalid JSON: Expecting value"
+    },
+    "inference": {
+      "model": "gemma2:2b",
+      "success": true,
+      "answer": "```json\n{\"status\": \"ok\", \"count\": 3}\n```",
+      "latency_seconds": 14.021,
+      "prompt_tokens": 39,
+      "response_tokens": 18,
+      "tokens_per_second": 4.4921,
+      "cpu_percent_before": 97.4,
+      "memory_percent_before": 95.5,
+      "error": null
+    }
+  },
+  {
+    "timestamp_utc": "2026-10-26T21:37:49.538288+00:00",
+    "test_id": "ROB-003",
+    "category": "uncertainty_handling",
+    "model": "gemma2:2b",
+    "success": true,
+    "passed": true,
+    "check": {
+      "check_type": "non_empty_response",
+      "passed": true,
+      "details": "Response is non-empty; factual correctness is not established."
+    },
+    "inference": {
+      "model": "gemma2:2b",
+      "success": true,
+      "answer": "I can't tell you the exact weather 30 days from today. Here's why:\n\n* **Weather is complex:** Weather forecasting involves predicting the movement of air masses, temperature changes, humidity, wind patterns, and more. These factors interact in intricate ways, making accurate long-term predictions challenging.\n* **Limited data:**  Weather models rely on a vast amount of data, including historical weather patterns, atmospheric conditions, and even satellite imagery.  While these models are constantly improving, they still have limitations in predicting long-term weather with pinpoint accuracy.\n* **Unpredictable events:**  Unexpected events like storms, volcanic eruptions, or even large-scale changes in air pressure can significantly impact weather patterns, making long-term forecasts even more difficult.\n\n**What I can do:**\n\n* **General trends:** I can provide you with general weather trends for your location based on historical data and current conditions. \n* **Suggest resources:**  For more accurate long-term weather forecasts, I recommend checking with reputable weather services like:\n    * **National Weather Service (US):** [https://www.weather.gov/](https://www.weather.gov/)\n    * **AccuWeather:** [https://www.accuweather.com/](https://www.accuweather.com/)\n    * **The Weather Channel:** [https://weather.com/](https://weather.com/)\n\nRemember, weather forecasts are always subject to change, and it's best to stay informed about the latest updates. \n",
+      "latency_seconds": 80.6356,
+      "prompt_tokens": 36,
+      "response_tokens": 321,
+      "tokens_per_second": 4.2956,
+      "cpu_percent_before": 100.0,
+      "memory_percent_before": 95.5,
+      "error": null
+    }
+  }
+]

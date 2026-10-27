@@ -1,0 +1,102 @@
+[
+  {
+    "timestamp_utc": "2026-10-26T21:22:43.615227+00:00",
+    "test_id": "BASE-002",
+    "category": "instruction_following",
+    "model": "llama3.2:3b",
+    "success": true,
+    "passed": true,
+    "check": {
+      "check_type": "json_array",
+      "passed": true,
+      "details": "Valid JSON array."
+    },
+    "inference": {
+      "model": "llama3.2:3b",
+      "success": true,
+      "answer": "[\"Python\", \"JavaScript\", \"C++\"]",
+      "latency_seconds": 60.1149,
+      "prompt_tokens": 41,
+      "response_tokens": 11,
+      "tokens_per_second": 4.1962,
+      "cpu_percent_before": 45.3,
+      "memory_percent_before": 59.9,
+      "error": null
+    }
+  },
+  {
+    "timestamp_utc": "2026-10-26T21:24:16.155261+00:00",
+    "test_id": "ROB-001",
+    "category": "ambiguity_handling",
+    "model": "llama3.2:3b",
+    "success": true,
+    "passed": true,
+    "check": {
+      "check_type": "non_empty_response",
+      "passed": true,
+      "details": "Response is non-empty; factual correctness is not established."
+    },
+    "inference": {
+      "model": "llama3.2:3b",
+      "success": true,
+      "answer": "To provide effective suggestions for improving performance, I need to know more about the specific context and areas of concern. Here are some questions to help me better understand the situation:\n\n1. **What type of performance are you trying to improve?** Is it related to:\n\t* Physical performance (e.g., athletic, fitness, or endurance)?\n\t* Mental performance (e.g., cognitive, emotional, or behavioral)?\n\t* Productivity or efficiency in a specific task or profession?\n\t* Overall well-being or quality of life?\n2. **What are the specific goals or objectives?** Are you trying to:\n\t* Increase speed or accuracy?\n\t* Improve focus or concentration?\n\t* Enhance creativity or problem-solving skills?\n\t* Reduce stress or anxiety?\n3. **What is the current environment or situation?** Are you:\n\t* Working in a team or individually?\n\t* Under time pressure or with limited resources?\n\t* Dealing with distractions or interruptions?\n\t* Experiencing physical or mental fatigue?\n4. **What are the available resources?** Do you have:\n\t* Access to training or coaching?\n\t* The necessary equipment or tools?\n\t* A supportive network or community?\n\t* A clear understanding of your strengths and weaknesses?\n5. **What are the potential barriers or obstacles?** Are you facing:\n\t* Self-doubt or confidence issues?\n\t* Fear of failure or risk-taking?\n\t* Limited motivation or engagement?\n\t* External factors like competition, pressure, or expectations?\n\nOnce I have a better understanding of these factors, I can provide more tailored and effective suggestions for improving performance.",
+      "latency_seconds": 92.5383,
+      "prompt_tokens": 43,
+      "response_tokens": 333,
+      "tokens_per_second": 3.7776,
+      "cpu_percent_before": 55.9,
+      "memory_percent_before": 77.8,
+      "error": null
+    }
+  },
+  {
+    "timestamp_utc": "2026-10-26T21:24:24.729712+00:00",
+    "test_id": "ROB-002",
+    "category": "format_compliance",
+    "model": "llama3.2:3b",
+    "success": true,
+    "passed": true,
+    "check": {
+      "check_type": "json_object",
+      "passed": true,
+      "details": "JSON object matches expected structure and values."
+    },
+    "inference": {
+      "model": "llama3.2:3b",
+      "success": true,
+      "answer": "{\"status\": \"ok\", \"count\": 3}",
+      "latency_seconds": 8.5669,
+      "prompt_tokens": 55,
+      "response_tokens": 13,
+      "tokens_per_second": 4.3787,
+      "cpu_percent_before": 98.6,
+      "memory_percent_before": 79.0,
+      "error": null
+    }
+  },
+  {
+    "timestamp_utc": "2026-10-26T21:26:18.118349+00:00",
+    "test_id": "ROB-003",
+    "category": "uncertainty_handling",
+    "model": "llama3.2:3b",
+    "success": true,
+    "passed": true,
+    "check": {
+      "check_type": "non_empty_response",
+      "passed": true,
+      "details": "Response is non-empty; factual correctness is not established."
+    },
+    "inference": {
+      "model": "llama3.2:3b",
+      "success": true,
+      "answer": "I'm a large language model, I don't have the ability to access real-time weather data or your current location. However, I can provide some general information about predicting weather 30 days in advance.\n\nPredicting weather 30 days in advance is a challenging task, even for the most advanced weather forecasting models. There are several reasons for this:\n\n1. **Complexity of atmospheric dynamics**: The atmosphere is a complex system, and small changes in atmospheric conditions can lead to large and unpredictable changes in weather patterns.\n2. **Limited data**: Weather forecasting models rely on a vast amount of data, including atmospheric conditions, ocean currents, and land surface conditions. However, there are still gaps in data coverage, particularly over remote or oceanic areas.\n3. **Model limitations**: Weather forecasting models are based on mathematical equations that describe the behavior of the atmosphere. However, these models are simplified representations of the real world and can't capture all the nuances of atmospheric behavior.\n4. **Chaos theory**: The atmosphere is a chaotic system, meaning small changes in initial conditions can lead to drastically different outcomes. This makes it difficult to predict weather patterns with high accuracy.\n\nGiven these limitations, predicting the exact weather 30 days in advance is not reliable. However, I can suggest some ways to get an idea of the weather forecast for your location:\n\n1. **Check online weather forecasts**: Websites like AccuWeather, Weather.com, or the National Weather Service (NWS) provide current and forecasted weather conditions for your location.\n2. **Use a weather app**: Many smartphones come with built-in weather apps that provide current and forecasted weather conditions.\n3. **Check social media and news**: Follow local news and weather reports on social media to get an idea of the current weather conditions and forecast.\n\nKeep in mind that weather forecasts are subject to change, and it's always a good idea to check the forecast multiple times before making any plans.",
+      "latency_seconds": 113.386,
+      "prompt_tokens": 51,
+      "response_tokens": 391,
+      "tokens_per_second": 3.6233,
+      "cpu_percent_before": 94.1,
+      "memory_percent_before": 78.5,
+      "error": null
+    }
+  }
+]

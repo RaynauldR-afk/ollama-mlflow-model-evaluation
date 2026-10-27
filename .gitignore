@@ -1,0 +1,30 @@
+﻿__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+mlruns/
+mlruns_backup/
+
+.vscode/
+.idea/
+
+reports/generated/
+
+# Python environments and test caches
+.venv/
+.pytest_cache/
+
+# Local backups and logs
+backup/
+backups/
+*_backup/
+*.log

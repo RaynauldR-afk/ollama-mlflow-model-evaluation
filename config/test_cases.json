@@ -1,0 +1,89 @@
+
+{
+  "suite_name": "Ollama Three-Model Evaluation",
+  "suite_version": "1.0.0",
+  "rounds": [
+    {
+      "name": "baseline",
+      "description": "Measure initial functional correctness, instruction following, and response performance."
+    },
+    {
+      "name": "robustness",
+      "description": "Evaluate ambiguity handling, factual consistency, and output-format compliance."
+    },
+    {
+      "name": "regression",
+      "description": "Compare current model results against saved baseline results."
+    }
+  ],
+  "models": [
+    "llama3.2:3b",
+    "qwen2.5:3b",
+    "gemma2:2b"
+  ],
+  "test_cases": [
+    {
+      "id": "BASE-001",
+      "category": "functional_correctness",
+      "prompt": "What is 12 multiplied by 8? Return only the numerical answer.",
+      "expected_answer": "96",
+      "check_type": "exact_match",
+      "rounds": ["baseline", "regression"]
+    },
+    {
+      "id": "BASE-002",
+      "category": "instruction_following",
+      "prompt": "Return exactly three programming languages as a JSON array. Do not include any explanation.",
+      "expected_answer": null,
+      "check_type": "json_array",
+      "rounds": ["baseline", "robustness", "regression"]
+    },
+    {
+      "id": "BASE-003",
+      "category": "functional_correctness",
+      "prompt": "In one short sentence, explain what a Python function does.",
+      "expected_answer": null,
+      "check_type": "non_empty_response",
+      "rounds": ["baseline", "regression"]
+    },
+    {
+      "id": "ROB-001",
+      "category": "ambiguity_handling",
+      "prompt": "Explain how to improve performance. First identify what information is missing before giving general suggestions.",
+      "expected_answer": null,
+      "check_type": "non_empty_response",
+      "rounds": ["robustness"]
+    },
+    {
+      "id": "ROB-002",
+      "category": "format_compliance",
+      "prompt": "Return a JSON object with exactly two keys: \"status\" set to \"ok\" and \"count\" set to 3. Return JSON only.",
+      "expected_answer": {
+        "status": "ok",
+        "count": 3
+      },
+      "check_type": "json_object",
+      "rounds": ["robustness"]
+    },
+    {
+      "id": "ROB-003",
+      "category": "uncertainty_handling",
+      "prompt": "What will the exact weather be at my current location 30 days from today? If you cannot determine this reliably, explain why.",
+      "expected_answer": null,
+      "check_type": "non_empty_response",
+      "rounds": ["robustness"]
+    }
+  ],
+  "evaluation_limits": {
+    "request_timeout_seconds": 300,
+    "temperature": 0,
+    "latency_regression_threshold": 0.5,
+    "score_regression_threshold": 0.1
+  },
+  "notes": [
+    "Exact-match and JSON checks are deterministic where applicable.",
+    "A non-empty response does not establish factual correctness.",
+    "Hallucination detection requires separate evidence-based verification and is not proven by keyword matching.",
+    "Regression comparisons require a valid baseline produced using the same test definitions."
+  ]
+}

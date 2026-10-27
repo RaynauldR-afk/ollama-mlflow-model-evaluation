@@ -1,0 +1,35 @@
+{
+  "llama3.2:latest": {
+    "successful_tests": 7,
+    "failed_tests": 0,
+    "average_score": 1.0,
+    "average_latency_seconds": 39.568,
+    "max_latency_seconds": 106.419,
+    "average_tokens_per_second": 4.9,
+    "average_system_cpu_percent": 74.88,
+    "average_system_memory_percent": 93.95,
+    "tests_per_minute": 1.516
+  },
+  "qwen2.5:3b": {
+    "successful_tests": 7,
+    "failed_tests": 0,
+    "average_score": 1.0,
+    "average_latency_seconds": 81.217,
+    "max_latency_seconds": 286.67,
+    "average_tokens_per_second": 4.647,
+    "average_system_cpu_percent": 76.91,
+    "average_system_memory_percent": 79.42,
+    "tests_per_minute": 0.739
+  },
+  "gemma2:2b": {
+    "successful_tests": 7,
+    "failed_tests": 0,
+    "average_score": 1.0,
+    "average_latency_seconds": 52.122,
+    "max_latency_seconds": 180.673,
+    "average_tokens_per_second": 4.645,
+    "average_system_cpu_percent": 75.9,
+    "average_system_memory_percent": 79.82,
+    "tests_per_minute": 1.151
+  }
+}
